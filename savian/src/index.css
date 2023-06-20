@@ -7,7 +7,11 @@
   list-style-type: none;
   border: none;
   outline: none;
-  font-family: sans-serif;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
+
   transition: 0.5s ease;
 }
 html{
@@ -15,4 +19,9 @@ html{
 }
 button:hover{
   cursor: pointer;
+}
+
+:root{
+  --primary-skin:rgba(216,212,209,255);
+  --primary-black:rgba(17,16,37,255);
 }

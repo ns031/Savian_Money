@@ -1,9 +1,10 @@
 .home_container{
     font-family: 'Nunito', sans-serif;
+
 }
 
 .home_container_img{
-    background:linear-gradient(rgba(0,0,0, 0.263),rgba(0,0,0,0.2)),url('../images/home_bg5.jpg') no-repeat;
+    background:linear-gradient(rgba(17,16,37, 0.263),rgba(17,16,37,0.2)),url('../images/home_bg6.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 85vh;
@@ -37,8 +38,13 @@
 }
 
 .home_bottom_heading{
-    font-family: 'Nunito', sans-serif;    
-    font-size:x-large;
+    font-family: 'Italiana', serif;
+    font-size:45px;
+    font-weight: 500;
+    border-bottom: 5px solid var(--primary-skin);
+    margin: 1rem;
+    text-align: center;
+    
 
 }
 
@@ -47,5 +53,14 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 80%;
+    
+}
+
+.home_bottom button{
+    background-color: var(--primary-black);
+    margin: 2.5rem;
+    padding: 15px;
+    color: var(--primary-skin);
+    font-family: 'Nunito', sans-serif !important;
 }
 
