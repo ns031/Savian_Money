@@ -8,6 +8,9 @@ import Builderpage from './components/Builderpage';
 import Saya from './Allbuilders/Saya';
 import SikkaH from './Allbuilders/SikkaH';
 import Mahagun from './Allbuilders/Mahagun';
+import Bhutani from './Allbuilders/Bhutani';
+import Gaurs from './Allbuilders/Gaurs';
+import Group108 from './Allbuilders/Group108';
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
         <Route path='/saya' element={<Saya />}></Route>
         <Route path='/sikka' element={<SikkaH />}></Route>
         <Route path='/mahagun' element={<Mahagun />}></Route>
+        <Route path='/bhutani' element={<Bhutani />}></Route>
+        <Route path='/gaurs' element={<Gaurs />}></Route>
+        <Route path='/grp108' element={<Group108 />}></Route>
   
       </Routes>
 
