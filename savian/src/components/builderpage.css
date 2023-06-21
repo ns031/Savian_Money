@@ -1,0 +1,22 @@
+.builderpage_container{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.builderpage_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.builderpage_heading{
+    font-family: 'Italiana', serif;
+    font-size:45px;
+    font-weight: 500;
+    border-bottom: 5px solid var(--primary-skin);
+    margin: 1rem;
+    text-align: center;
+}

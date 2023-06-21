@@ -4,6 +4,7 @@ import Builders from "./Builders";
 import sikka from "../images/sikka_3_600x450.jpg"
 import saya from "../images/Saya_logo.jpg"
 import mahagun from "../images/mahagun_logo.png"
+import { NavLink } from "react-router-dom";
 
 export const Home=()=>{
     return(
@@ -20,7 +21,7 @@ export const Home=()=>{
                     <Builders image={sikka} title="Saya" description="Saya Group fondly called as SAYA HOMES is a fast growing real estate organization with timely deliver and 2 decades of delivering excellence"/>
                     <Builders image={mahagun} title="Saya" description="Saya Group fondly called as SAYA HOMES is a fast growing real estate organization with timely deliver and 2 decades of delivering excellence"/>
                 </div>
-                <button>Find More..</button>
+                <NavLink to='/builderpage'><button>Find More...</button></NavLink>
         
             </div>
             
