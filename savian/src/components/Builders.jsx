@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 const Builders=({image,title,description,address})=>{
     return(
         <div className="builders_container">
+            {/* eslint-disable-next-line */}
             <img src={image}/>
             <div className="builder_info">
                 <p>{title}</p>

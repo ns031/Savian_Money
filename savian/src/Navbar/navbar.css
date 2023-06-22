@@ -1,5 +1,59 @@
-.Navbar_container{
-    
-   
+.main-nav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8rem 1fr 2fr 8rem;
+    height: 5rem;
+}
 
+.logo{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+.menu-link{
+    grid-column: 3/4;
+}
+
+.menu-link ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    font-size: larger;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width:850px) and (max-width:1050px) {
+    .main-nav{
+        grid-template-columns: 5rem 1fr 2fr 5rem;
+        height: 4rem;
+    }
+    .menu-link ul{
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .menu-link{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        height: 4rem;
+        align-items: center;
+        justify-content: end;
+    }
+    .main-nav{
+        grid-template-columns: 4rem 2fr 1fr 4rem;
+        height: 4rem;
+    }
+    .mobile-menu-link {
+        display: grid;
+    }
 }
