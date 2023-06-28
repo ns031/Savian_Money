@@ -11,6 +11,7 @@ import Mahagun from './Allbuilders/Mahagun';
 import Bhutani from './Allbuilders/Bhutani';
 import Gaurs from './Allbuilders/Gaurs';
 import Group108 from './Allbuilders/Group108';
+import Footer from './components/footer';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <Route path='/grp108' element={<Group108 />}></Route>
   
       </Routes>
-
+      <Footer/>
    </>
   );
 }

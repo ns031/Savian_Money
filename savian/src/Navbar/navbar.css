@@ -27,6 +27,10 @@
     display: none;
 }
 
+.mobile-menu-link{
+    display: none;
+}
+
 /* Media Queries */
 
 @media screen and (min-width:850px) and (max-width:1050px) {
@@ -43,17 +47,27 @@
     .menu-link{
         display: none;
     }
+    .main-nav{
+        width: 100%;
+        grid-template-columns: 4rem 1fr 2fr 4rem;
+        height: 4rem;
+    }
     .hamburger-menu{
-        display: flex;
+        display: grid;
         height: 4rem;
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
     }
-    .main-nav{
-        grid-template-columns: 4rem 2fr 1fr 4rem;
-        height: 4rem;
-    }
-    .mobile-menu-link {
+    .mobile-menu-link{
         display: grid;
+        grid-column: 2/4;
+        z-index: 99;
+    }
+    .mobile-menu-link ul{
+        background-color: rgba(216,212,209,255);
+        height: 10rem;
+        display: grid;
+        padding-left: 2%;
+        align-items: center;
     }
 }
