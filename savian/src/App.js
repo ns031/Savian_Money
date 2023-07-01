@@ -12,6 +12,7 @@ import Bhutani from './Allbuilders/Bhutani';
 import Gaurs from './Allbuilders/Gaurs';
 import Group108 from './Allbuilders/Group108';
 import Footer from './components/footer';
+import Advantages from './components/Advantages';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/grp108' element={<Group108 />}></Route>
   
       </Routes>
+      <Advantages/>
       <Footer/>
    </>
   );

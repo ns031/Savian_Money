@@ -1,0 +1,120 @@
+.timeline{
+    position: relative;
+    max-width: 1100px;
+    margin: 1% auto;
+}
+.container{
+    padding: 1% 4%;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.text-box{
+    padding: 4%;
+    background: rgba(216,212,209,255);
+    position: relative;
+    border-radius: 10px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.circle{
+    position: absolute;
+    width: 40px;
+    right: -20px;
+    top: 40px;
+    z-index: 10;
+    font-size: larger;
+}
+.right-container .circle{
+    left: -20px;
+}
+.timeline::after{
+    content: '';
+    background-color: rgba(17,16,37,255);
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    width: 5px;
+    top: 0;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.text-box h2{
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgba(216,212,209,255);
+    right: -14px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgba(216,212,209,255);
+    left: -14px;
+}
+@media screen and (max-width: 700px){
+    .timeline::after{
+        left: 16px;
+        width: 3px;
+    }
+    .container{
+        width: 100%;
+        padding: 2% 6% 2% 8.5%;
+    }
+    .right-container{
+        left: 0;
+    }
+    .right-container .circle, .left-container .circle{
+        left: -6px;
+        font-size: large;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-left: 0;
+        border-right: 15px solid rgba(216,212,209,255);
+        left: -14px;
+    }
+}
