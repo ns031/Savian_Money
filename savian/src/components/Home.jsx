@@ -6,6 +6,7 @@ import saya from "../images/Saya_logo.jpg"
 import mahagun from "../images/mahagun_logo.png"
 
 import { NavLink } from "react-router-dom";
+import Footer from '../components/footer';
 
 export const Home=()=>{
     return(
@@ -23,8 +24,11 @@ export const Home=()=>{
                     <Builders image={mahagun} title="Saya" description="Saya Group fondly called as SAYA HOMES is a fast growing real estate organization with timely deliver and 2 decades of delivering excellence"/>
                 </div>
                 <NavLink to='/builderpage'><button>Find More...</button></NavLink>
+                
         
             </div>
+            
+            <Footer/>
             
            
         </div>

@@ -22,6 +22,8 @@ button:hover{
 }
 
 :root{
+  --primary-green:#68ffd1;
+  --secondary-black:#0a0c10;
   --primary-skin:rgba(216,212,209,255);
   --primary-black:rgba(17,16,37,255);
 }

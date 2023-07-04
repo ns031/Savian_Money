@@ -15,27 +15,20 @@ const Navbar=()=>{
                     <span>M</span>oney
                 </h2>
             </div>
-            <div className= "menu-link">
+            <div className={showMediaIcons ?"mobile-menu-link" : "menu-link" }>
                 <ul>
-                    <li> <a href="#/">Home</a> </li>
-                    <li> <a href="#about">About</a> </li>
-                    <li> <a href="#builders">Builders</a> </li>
-                    <li> <a href="#contact">Contact Us</a> </li>
+                    <li> <a href="/">Home</a> </li>
+                    <li> <a href="/about">About</a> </li>
+                    <li> <a href="/builders">Builders</a> </li>
+                    <li> <a href="/emi">EMI Calculator</a> </li>
+                    <li> <a href="/contact">Contact Us</a> </li>
                 </ul>
             </div>
-            {/* showMediaIcons ? "mobile-menu-link" : */}
+
             <div className="hamburger-menu">
                 <a href="#hamburger" onClick={() => setShowMediaIcons(!showMediaIcons)}>
                     <GiHamburgerMenu />
                 </a>
-            </div>
-            <div className={showMediaIcons ?"mobile-menu-link" : "menu-link"} >
-                <ul>
-                    <li> <a href="#/">Home</a> </li>
-                    <li> <a href="#about">About</a> </li>
-                    <li> <a href="#builders">Builders</a> </li>
-                    <li> <a href="#contact">Contact Us</a> </li>
-                </ul>
             </div>
         </nav>
         </>

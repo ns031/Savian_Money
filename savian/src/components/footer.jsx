@@ -1,20 +1,20 @@
 import React from 'react';
 import './footer.css';
+// import {FaPhone} from 'react-icons/fa'
+// import {AiOutlineMail} from 'react-icons/ai'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import '../images/email.png'
 
 const Footer =() => {
     return(
-        <div className="contact" id="contact">
+        <div className="footer" id="footer">
         
           <div className="contact_top">
-            <div className="contact_left">   
-              <h4>Contact Us</h4>
-              <p>+919310207305</p>
-              <p>+919354970067</p>
-              <p>contact@savianmoney.com</p>
-            </div>
 
             <div className="footer_form_container">
-              <h4>Enquire Now</h4>
+              <h3>Enquire Now</h3>
               <form action='https://formspree.io/f/xgejwlzr' method='POST'>
                   <input
                     type='text'
@@ -55,8 +55,22 @@ const Footer =() => {
               </form>
             </div>
 
+            <div className="contact_left">   
+                <span className='contact_icon'>
+                  {/* <FaPhone /> */}
+                  <FontAwesomeIcon icon={faPhone} className='icons'/>
+                  <p> +919310207305/ +919354970067</p>
+                </span>
+              
+                <span className='contact_icon'>
+                  {/* <AiOutlineMail /> */}
+                  <FontAwesomeIcon icon={faEnvelope} className='icons'/>
+                  <img src="images/email.png" alt=""/>
+                  <p> contact@savianmoney.com</p>
+                </span>
+            </div>
+
           </div>
-          <p class="disclaimer">Disclaimer:This site is for information purpose only and should not be treated as the official information.</p>
         </div>
 
     )
