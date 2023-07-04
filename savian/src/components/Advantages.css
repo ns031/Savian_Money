@@ -1,7 +1,7 @@
 .timeline{
     position: relative;
     max-width: 1100px;
-    margin: 1% auto;
+    margin: 6rem auto;
 }
 .container{
     padding: 1% 4%;
@@ -28,9 +28,13 @@
 }
 .text-box{
     padding: 4%;
-    background: rgba(216,212,209,255);
+    /*background: rgba(216,212,209,255);*/
     position: relative;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    border: none;
+    background-color: var(--primary-skin);
+    
+    
 }
 .left-container{
     left: 0;
@@ -69,10 +73,25 @@
         height: 100%;
     }
 }
+
+.text-box{
+    padding: 1.5rem;
+    box-shadow:0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+}
+
+
+.text-box p{
+    font-family: 'Nunito', sans-serif;
+    
+}
+
 .text-box h2{
-    font-weight: 700;
+    font-weight: 500;
     display: inline-block;
     margin-bottom: 15px;
+    font-family: 'Karla', sans-serif;
+    
 }
 .left-container-arrow{
     height: 0;

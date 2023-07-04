@@ -1,48 +1,48 @@
 import React, { useState } from "react";
 // import { NavLink } from 'react-router-dom';
 import '../Navbar/navbar.css';
-import {GiHamburgerMenu} from 'react-icons/gi';
+//import {GiHamburgerMenu} from 'react-icons/gi';
 
-const Navbar=()=>{
-    const[showMediaIcons, setShowMediaIcons] = useState(false);
+//const Navbar=()=>{
+   // const[showMediaIcons, setShowMediaIcons] = useState(false);
 
-    return(
-        <>
-        <nav className="main-nav">
-            <div className="logo">
-                <h2>
-                    <span>S</span>avian
-                    <span>M</span>oney
-                </h2>
-            </div>
-            <div className= "menu-link">
-                <ul>
-                    <li> <a href="#/">Home</a> </li>
-                    <li> <a href="#about">About</a> </li>
-                    <li> <a href="#builders">Builders</a> </li>
-                    <li> <a href="#contact">Contact Us</a> </li>
-                </ul>
-            </div>
-            {/* showMediaIcons ? "mobile-menu-link" : */}
-            <div className="hamburger-menu">
-                <a href="#hamburger" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                    <GiHamburgerMenu />
-                </a>
-            </div>
-            <div className={showMediaIcons ?"mobile-menu-link" : "menu-link"} >
-                <ul>
-                    <li> <a href="#/">Home</a> </li>
-                    <li> <a href="#about">About</a> </li>
-                    <li> <a href="#builders">Builders</a> </li>
-                    <li> <a href="#contact">Contact Us</a> </li>
-                </ul>
-            </div>
-        </nav>
-        </>
-    )
-}
+    //return(
+      //  <>
+        //<nav className="main-nav">
+          //  <div className="logo">
+            //    <h2>
+              //      <span>S</span>avian
+                //    <span>M</span>oney
+                //</h2>
+            //</div>
+           // <div className= "menu-link">
+            //    <ul>
+              //      <li> <a href="#/">Home</a> </li>
+                //    <li> <a href="#about">About</a> </li>
+                  //  <li> <a href="#builders">Builders</a> </li>
+                   // <li> <a href="#contact">Contact Us</a> </li>
+               // </ul>
+            //</div>
+           // {/* showMediaIcons ? "mobile-menu-link" : */}
+          //  <div className="hamburger-menu">
+            //    <a href="#hamburger" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              //      <GiHamburgerMenu />
+            //    </a>
+        //    </div>
+        //    <div className={showMediaIcons ?"mobile-menu-link" : "menu-link"} >
+        //        <ul>
+        //            <li> <a href="#/">Home</a> </li>
+        //            <li> <a href="#about">About</a> </li>
+        //            <li> <a href="#builders">Builders</a> </li>
+        //            <li> <a href="#contact">Contact Us</a> </li>
+        //        </ul>
+        //    </div>
+    //    </nav>
+    //    </>
+  //  )
+//}
 
-export default Navbar;
+//export default Navbar;
 
     // return(
     //     <nav className='navbar-container'>

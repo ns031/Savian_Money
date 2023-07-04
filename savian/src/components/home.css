@@ -41,9 +41,11 @@
     font-family: 'Italiana', serif;
     font-size:45px;
     font-weight: 500;
-    border-bottom: 5px solid var(--primary-skin);
+    border-bottom: 1px solid gray;
     margin: 1rem;
     text-align: center;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     
 
 }

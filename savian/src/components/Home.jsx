@@ -6,6 +6,11 @@ import saya from "../images/Saya_logo.jpg"
 import mahagun from "../images/mahagun_logo.png"
 
 import { NavLink } from "react-router-dom";
+import { Services } from "./services/Services";
+import Whatis from "./whatisconsulting/Whatis";
+import Footer from "./footer";
+import Advantages from "./Advantages";
+
 
 export const Home=()=>{
     return(
@@ -14,6 +19,9 @@ export const Home=()=>{
                 <p className="home_heading">Explore builders</p>
                 <input placeholder="Search here"></input> 
             </div>
+            <Whatis />
+            <Advantages />
+            <Services />
             <div className="home_bottom">
                 
                 <p className="home_bottom_heading">Explore the Builders</p>
@@ -25,6 +33,7 @@ export const Home=()=>{
                 <NavLink to='/builderpage'><button>Find More...</button></NavLink>
         
             </div>
+            <Footer />
             
            
         </div>

@@ -1,6 +1,6 @@
 import './App.css';
 
-import Navbar from './Navbar/Navbar';
+//import Navbar from './Navbar/Navbar';
 import { Routes,Route } from 'react-router-dom';
 import {Home} from './components/Home'
 import {About} from './components/About'
@@ -11,14 +11,14 @@ import Mahagun from './Allbuilders/Mahagun';
 import Bhutani from './Allbuilders/Bhutani';
 import Gaurs from './Allbuilders/Gaurs';
 import Group108 from './Allbuilders/Group108';
-import Footer from './components/footer';
-import Advantages from './components/Advantages';
+import Emi from './components/emi_calc/Emi';
+
 
 
 function App() {
   return (
     <>
-      <Navbar />
+{/*<Navbar />*/}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
@@ -29,10 +29,10 @@ function App() {
         <Route path='/bhutani' element={<Bhutani />}></Route>
         <Route path='/gaurs' element={<Gaurs />}></Route>
         <Route path='/grp108' element={<Group108 />}></Route>
-  
+        <Route path='/emi' element={<Emi />}></Route>
       </Routes>
-      <Advantages/>
-      <Footer/>
+      
+      
    </>
   );
 }
