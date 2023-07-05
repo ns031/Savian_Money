@@ -22,6 +22,10 @@ button:hover{
 }
 
 :root{
+  --primary-green:#68ffd1;
   --primary-skin:rgba(216,212,209,255);
   --primary-black:rgba(17,16,37,255);
+  --secondary-gray:#bbbcc4;
+  --primary-blue:#264c94;
+  --third-gray:#89a0bf;
 }

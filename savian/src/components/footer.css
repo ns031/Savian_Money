@@ -2,7 +2,8 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    background-color: rgba(216,212,209,255);
+    /*background-color: rgba(216,212,209,255);*/
+    background-color: var(--third-gray);
     margin: 3em 0em 0em 0em;
 }
 .contact_top{

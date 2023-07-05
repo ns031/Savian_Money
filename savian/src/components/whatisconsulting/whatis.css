@@ -2,9 +2,20 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 1.5rem;
-    padding: 2rem;
+    margin: 4rem;
+    align-items: center;
    
+}
+
+.dots{
+    margin-right: 1rem;
+    width: 10%;
+    height: 450px;
+}
+
+.whatis_contents{
+    padding: 1.5rem;
+    display: flex;
 }
 
 .whatis_heading{
