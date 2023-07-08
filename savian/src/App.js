@@ -12,7 +12,7 @@ import Mahagun from './Allbuilders/Mahagun';
 import Bhutani from './Allbuilders/Bhutani';
 import Gaurs from './Allbuilders/Gaurs';
 import Group108 from './Allbuilders/Group108';
-import Advantages from './components/Advantages';
+import Emi from './components/emi_calc/Emi';
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         <Route path='/bhutani' element={<Bhutani />}></Route>
         <Route path='/gaurs' element={<Gaurs />}></Route>
         <Route path='/grp108' element={<Group108 />}></Route>
-        <Route path='/advantages' element={<Advantages/>}></Route>
+        <Route path='/emi' element={<Emi />}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
       </Routes>
       

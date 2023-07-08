@@ -1,0 +1,49 @@
+.whatis_container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 6rem;
+    align-items: center;
+   
+}
+
+.dots{
+    margin-right: 1rem;
+    width: 10%;
+    height: 450px;
+}
+
+.whatis_contents{
+    padding: 1.5rem;
+    display: flex;
+}
+
+.whatis_heading{
+    font-size: 45px;
+    font-family: 'Italiana', serif;
+    flex: 2;
+}
+
+.whatis_content{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    flex: 2;
+    text-align: justify;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1050px) {
+    .whatis_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatis_heading{
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid gray;
+        width: fit-content;
+        padding-bottom: 0.3em;
+    }
+    
+}

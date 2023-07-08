@@ -2,10 +2,9 @@ import React from 'react';
 import './footer.css';
 // import {FaPhone} from 'react-icons/fa'
 // import {AiOutlineMail} from 'react-icons/ai'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import '../images/email.png'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPhone } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer =() => {
     return(
@@ -15,7 +14,7 @@ const Footer =() => {
 
             <div className="footer_form_container">
               <h3>Enquire Now</h3>
-              <form action='https://formspree.io/f/xgejwlzr' method='POST'>
+              <form action='https://formspree.io/f/xrgwgqek' method='POST'>
                   <input
                     type='text'
                     name='username'
@@ -58,14 +57,13 @@ const Footer =() => {
             <div className="contact_left">   
                 <span className='contact_icon'>
                   {/* <FaPhone /> */}
-                  <FontAwesomeIcon icon={faPhone} className='icons'/>
+                  {/* <FontAwesomeIcon icon={faPhone} className='icons'/> */}
                   <p> +919310207305/ +919354970067</p>
                 </span>
               
                 <span className='contact_icon'>
                   {/* <AiOutlineMail /> */}
-                  <FontAwesomeIcon icon={faEnvelope} className='icons'/>
-                  <img src="images/email.png" alt=""/>
+                  {/* <FontAwesomeIcon icon={faEnvelope} className='icons'/> */}
                   <p> contact@savianmoney.com</p>
                 </span>
             </div>

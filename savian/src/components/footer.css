@@ -1,9 +1,6 @@
 .footer{
     background-color:var(--secondary-black);
     margin-top: 3em;
-    /* position: absolute;
-    bottom: 0;
-    width: 100%; */
 }
 .contact_top{
     display: flex;

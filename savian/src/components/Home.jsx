@@ -6,6 +6,9 @@ import saya from "../images/Saya_logo.jpg"
 import mahagun from "../images/mahagun_logo.png"
 
 import { NavLink } from "react-router-dom";
+import { Services } from "./services/Services";
+import Advantages from "./Advantages"
+import Whatis from "./whatisconsulting/Whatis";
 import Footer from '../components/footer';
 
 export const Home=()=>{
@@ -15,6 +18,9 @@ export const Home=()=>{
                 <p className="home_heading">Explore builders</p>
                 <input placeholder="Search here"></input> 
             </div>
+            <Whatis />
+            <Advantages />
+            <Services />
             <div className="home_bottom">
                 
                 <p className="home_bottom_heading">Explore the Builders</p>
@@ -24,12 +30,9 @@ export const Home=()=>{
                     <Builders image={mahagun} title="Saya" description="Saya Group fondly called as SAYA HOMES is a fast growing real estate organization with timely deliver and 2 decades of delivering excellence"/>
                 </div>
                 <NavLink to='/builderpage'><button>Find More...</button></NavLink>
-                
         
             </div>
-            
-            <Footer/>
-            
+            <Footer />
            
         </div>
     );
